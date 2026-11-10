@@ -9,6 +9,8 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
+import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 interface ProductCardProps {
   id: string;
@@ -16,15 +18,16 @@ interface ProductCardProps {
   price: number;
   imagenes: Imagen[];
   category: string;
+  description: string
 }
 
-const ProductCard = ({ id, name, price, imagenes, category }: ProductCardProps) => {
+const ProductCard = ({ name, price, imagenes, description }: ProductCardProps) => {
 
 
 
   return (
     <div>
-      <Card className="group min-w-[200px] w-full border-0 shadow-none product-card-hover p-0">
+      <Card className="group min-w-[200px] w-full border-0 product-card-hover p-0">
         <CardContent className="p-0">
           <div className="relative aspect-square overflow-hidden bg-muted rounded-lg">
             <img
@@ -38,7 +41,6 @@ const ProductCard = ({ id, name, price, imagenes, category }: ProductCardProps) 
           <div className="pt-6 px-4 pb-4 space-y-3">
             <div className="space-y-1">
               <h3 className="font-medium text-sm tracking-tight">{name}</h3>
-              <p className="text-xs text-muted-foreground uppercase">{category}</p>
             </div>
 
             <div className="flex items-center justify-between">
@@ -47,18 +49,55 @@ const ProductCard = ({ id, name, price, imagenes, category }: ProductCardProps) 
                 <DialogTrigger render={<Button variant="outline" className="cursor-pointer" />}>
                   Ver más
                 </DialogTrigger>
-                <DialogContent className="max-w-2xl">
-                  <DialogHeader>
-                    <DialogTitle>Mat Surf</DialogTitle>
-                  </DialogHeader>
-                  <DetalleProducto imagenes={imagenes} />
+                <DialogContent className="
+                    w-[95vw]
+                    max-w-[1100px]
+                    sm:max-w-[1100px]
+                    max-h-[90vh]
+                    overflow-y-auto
+                    p-8
+                  ">
+                  <div className="grid grid-cols-1 md:grid-cols-[55%_45%] gap-8">
+                    {/* Galería */}
+                    <div className="w-full min-w-0">
+                      <DetalleProducto imagenes={imagenes} />
+                    </div>
+                    {/* Información */}
+                    <div className="min-w-0 flex flex-col gap-5">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl font-semibold">
+                          {name}
+                        </DialogTitle>
+                      </DialogHeader>
+                      <p>${price} CLP</p>
+                      <div className="text-sm leading-7 text-[#786049]">
+                        <ReactMarkdown
+                          rehypePlugins={[rehypeRaw]}
+                          components={{
+                            p: ({ children }) => (
+                              <p className="mb-4">{children}</p>
+                            ),
+                            strong: ({ children }) => (
+                              <strong className="font-semibold text-[#30251F]">
+                                {children}
+                              </strong>
+                            ),
+                            hr: () => (
+                              <hr className="my-5 border-[#E8D8C7]" />
+                            ),
+                          }}
+                        >
+                          {description}
+                        </ReactMarkdown>
+                      </div>
+                    </div>
+                  </div>
                 </DialogContent>
               </Dialog>
             </div>
           </div>
         </CardContent>
       </Card>
-
     </div>
 
   );

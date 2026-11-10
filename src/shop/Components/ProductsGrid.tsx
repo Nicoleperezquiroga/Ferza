@@ -1,8 +1,7 @@
 import type { Product } from '@/mocks/products.mock';
 import { useEffect, useState } from 'react'
 import ProductCard from './ProductCard';
-import { useParams, useSearchParams } from 'react-router';
-import { DetalleProducto } from './DetalleProducto';
+import { useParams } from 'react-router';
 
 interface Props {
   products: Product[];
@@ -46,6 +45,7 @@ export const ProductsGrid = ({ products }: Props) => {
                     price={product.price}
                     imagenes={product.imagenes}
                     category={product.category}
+                    description={product.description}
                   />
                 ))}
               </div>

@@ -1,6 +1,5 @@
 import { CustomJumbotron } from '@/shop/Components/CustomJumbotron'
 import { InfoCard } from '@/shop/Components/InfoCard'
-import React from 'react'
 
 export const ComoComprarPage = () => {
   return (

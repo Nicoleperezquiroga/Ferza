@@ -1,10 +1,5 @@
 import { Card, CardContent } from '@/components/ui/card'
-import type { ComoComprar } from '@/mocks/comoComprar.mock';
 import { pasosCompra } from '@/mocks/comoComprar.mock';
-
-
-
-import React from 'react'
 
 export const InfoCard = () => {
     return (

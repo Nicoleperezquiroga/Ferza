@@ -15,7 +15,6 @@ const handleSizeChanged = (size: string) => {
   setSearchParams(searchParams);
  }
 
- const currentPrice = searchParams.get('price')?.split(',') || 'any';
  const handlePriceChanged = (price: string) => {
   searchParams.set('page','1');
   searchParams.set('price',price);

@@ -1,6 +1,5 @@
-import React from 'react'
 import { categorias } from '@/mocks/categorias.mock';
-import { useNavigate, useParams, useSearchParams } from 'react-router';
+import { useNavigate } from 'react-router';
 
 export const CustomCategorias = () => {
 

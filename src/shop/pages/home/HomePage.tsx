@@ -1,5 +1,3 @@
-import { CustomPagination } from "@/components/custom/CustomPagination"
-import { products } from "@/mocks/products.mock"
 import { CustomCategorias } from "@/shop/Components/CustomCategorias"
 import { CustomJumbotron } from "@/shop/Components/CustomJumbotron"
 import { ImagenesInicio } from "@/shop/Components/ImagenesInicio"

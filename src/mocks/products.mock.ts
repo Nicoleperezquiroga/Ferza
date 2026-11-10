@@ -15,8 +15,18 @@ import PaddleSUP5 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-5.png";
 import PaddleSUP6 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-6.png";
 import PaddleSUP7 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-7.png";
 
-import PonchoPisi from "@/shop/assets/home/Poncho_Pisi.jpeg";
-import Maui from "@/shop/assets/home/Maui.jpeg";
+import Poncho1 from "@/shop/assets/home/Ponchos/Poncho-1.png";
+import Poncho2 from "@/shop/assets/home/Ponchos/Poncho-2.png";
+import Poncho3 from "@/shop/assets/home/Ponchos/Poncho-3.png";
+import Poncho4 from "@/shop/assets/home/Ponchos/Poncho-4.png";
+
+import Maui1 from "@/shop/assets/home/BolsoMaui/bolsoMaui-1.png";
+import Maui2 from "@/shop/assets/home/BolsoMaui/bolsoMaui-2.png";
+import Maui3 from "@/shop/assets/home/BolsoMaui/bolsoMaui-3.png";
+import Maui4 from "@/shop/assets/home/BolsoMaui/bolsoMaui-4.png";
+import Maui5 from "@/shop/assets/home/BolsoMaui/bolsoMaui-5.png";
+import Maui6 from "@/shop/assets/home/BolsoMaui/bolsoMaui-6.png";
+import Maui7 from "@/shop/assets/home/BolsoMaui/bolsoMaui-7.png";
 
 export interface Imagen {
   id: string;
@@ -39,8 +49,8 @@ export interface Product {
 export const products: Product[] = [
   {
     id: "1",
-    name: "Mat Surf",
-    price: 35,
+    name: `🌺 MAT SURF BAG`,
+    price: 36900,
     imagenes: [{
       id: "1",
       name: "Imagen",
@@ -84,14 +94,22 @@ export const products: Product[] = [
       habilitado: true,
     }],
     category: "Mar",
-    description: "Bolso Para el agua",
+    description: `**Tu compañero perfecto para los días de playa.** 🌊<br />
+Un práctico accesorio **2 en 1** que se transforma de mat para cambiarte en un bolso para transportar tus pertenencias.<br /><br />
+**✨ ¿Por qué lo amarás?**<br />
+🌊 Versátil y funcional para tus días de agua.<br />
+💦 Impermeable, ideal para guardar accesorios húmedos.<br />
+🌺 Confeccionado a mano en Chile con telas estampadas.<br /><br />
+**Medidas:** 90 × 80 cm aprox.<br /><br />
+*Del agua a tu próxima aventura.*<br />
+**FERZA** | Hecho a mano, inspirado en el mar. 🐚`,
     habilitado: true,
     topVenta: true,
   },
   {
     id: "2",
-    name: "Paddle SUP",
-    price: 85,
+    name: `🌊 FUNDA DE PALA SUP`,
+    price: 17900,
     imagenes: [{
       id: "1",
       name: "Imagen",
@@ -134,49 +152,115 @@ export const products: Product[] = [
       habilitado: true,
     }],
     category: "Mar",
-    description: "Sudadera con capucha de alta calidad con logo Tesla bordado.",
+    description: `**Protección y estilo para acompañarte en cada aventura.**<br />
+Diseñada para proteger la pala de tu remo SUP de golpes, rayaduras y roces durante el transporte y almacenamiento.<br /><br />
+**Protección para tu equipo**<br />
+Confeccionada a mano con materiales resistentes y un interior acolchado que brinda mayor protección a tu equipo.<br /><br />
+Práctica, liviana y funcional.<br /><br />
+🐚 *Hecho a mano, inspirado en el mar.*`,
     habilitado: true,
     topVenta: true,
   },
   {
     id: "3",
-    name: "Poncho Pisi",
-    price: 75,
+    name: `🌺 PONCHO PISI`,
+    price: 40900,
     imagenes: [{
       id: "1",
       name: "Imagen",
-      imagen: PonchoPisi,
+      imagen: Poncho1,
       habilitado: true,
     },
     {
       id: "2",
       name: "Imagen",
-      imagen: PonchoPisi,
+      imagen: Poncho2,
+      habilitado: true,
+    },
+    {
+      id: "3",
+      name: "Imagen",
+      imagen: Poncho3,
+      habilitado: true,
+    },
+    {
+      id: "4",
+      name: "Imagen",
+      imagen: Poncho4,
       habilitado: true,
     }],
     category: "Mar",
-    description: "Sudadera clásica sin capucha con corte moderno y cómodo.",
+    description: `**Comodidad, abrigo y estilo después de cada aventura.** 🌊<br />
+Diseñado para cambiarte y mantenerte abrigado después de disfrutar del mar.<br /><br />
+**✨ ¿Por qué lo amarás?**<br />
+🧵 Suaves telas de toalla, cómodas y absorbentes.<br />
+💦 Bolsillo con bolsa impermeable integrada para guardar accesorios húmedos.<br />
+🌺 Personalizable: elige entre cuello alto o capucha y agrega un estampado de animal marino.<br /><br />
+**Medidas:** 100 × 70 cm.<br /><br />
+*FERZA | Hecho a mano, inspirado en el mar.* 🐚`,
     habilitado: true,
     topVenta: true,
   },
   {
     id: "4",
     name: "Bolso Maui",
-    price: 75,
+    price: 22900,
     imagenes: [{
       id: "1",
-      name: "Imagen",
-      imagen: Maui,
+      name: "Imagen1",
+      imagen: Maui1,
       habilitado: true,
     },
     {
       id: "2",
-      name: "Imagen",
-      imagen: Maui,
+      name: "Imagen2",
+      imagen: Maui2,
+      habilitado: true,
+    },
+    {
+      id: "3",
+      name: "Imagen3",
+      imagen: Maui3,
+      habilitado: true,
+    },
+    {
+      id: "4",
+      name: "Imagen4",
+      imagen: Maui4,
+      habilitado: true,
+    },
+    {
+      id: "5",
+      name: "Imagen5",
+      imagen: Maui5,
+      habilitado: true,
+    },
+    {
+      id: "6",
+      name: "Imagen6",
+      imagen: Maui6,
+      habilitado: true,
+    },
+    {
+      id: "7",
+      name: "Imagen7",
+      imagen: Maui7,
       habilitado: true,
     }],
-    category: "Sudaderas",
-    description: "Sudadera clásica sin capucha con corte moderno y cómodo.",
+    category: "mar",
+    description: `**🌺 Bolso Maui | Impermeable 2 en 1**
+
+El compañero perfecto para quienes aman moverse con libertad.<br />
+Se adapta a tu día: úsalo como bandolera o transfórmalo fácilmente en mochila para llevar las manos libres.<br /><br />
+**✨ ¿Por qué lo amarás?**<br />
+🌊 Impermeable por dentro y por fuera.<br />
+🎒 Se transforma de bolso a mochila en segundos.<br />
+🔒 Cierre enrollable con hebilla para mayor seguridad.<br />
+📏 Correa regulable para mayor comodidad.<br />
+💦 Ideal para playa, piscina, SUP, surf, viajes y uso diario.<br />
+🌺 Diseño exclusivo FERZA inspirado en el color y la naturaleza.<br /><br />
+*Un bolso tan versátil como tus aventuras.*<br />
+**FERZA** | Hecho a mano, inspirado en el mar. 🐚`,
     habilitado: true,
     topVenta: true,
   },

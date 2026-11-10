@@ -2,13 +2,11 @@ import MatSurf1 from "@/shop/assets/home/MatSurf/Mat_Surf_1.jpeg";
 import type { LucideIcon } from "lucide-react";
 
 import {
-    ShoppingCart,
     Camera,
     SearchCheck,
     FileCheck,
     ScissorsLineDashed,
     Van,
-    HouseHeart
 } from "lucide-react";
 
 export interface ComoComprar {
