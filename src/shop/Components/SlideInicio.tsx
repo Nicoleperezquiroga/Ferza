@@ -28,7 +28,7 @@ export const SlideInicio = () => {
                     hover:text-white
                     transition-all duration-300">Ver Productos</Button>
                     </Link>
-                    <Link to="/contacto">
+                    <Link to="/comoComprar">
                         <Button className="rounded-full mr-3
                     px-6 py-5
                     text-base font-bold
@@ -36,7 +36,7 @@ export const SlideInicio = () => {
                     hover:bg-white
                     hover:shadow-lg
                     transition-all duration-300" variant="outline">
-                            Contáctanos</Button>
+                            Como Comprar</Button>
                     </Link>
                 </div>
             </section>

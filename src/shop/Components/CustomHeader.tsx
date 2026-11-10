@@ -74,7 +74,7 @@ export const CustomHeader = () => {
               onClick={() => setMenuAbierto(false)}
               className="rounded-md px-3 py-3 text-sm font-medium hover:bg-slate-200"
             >
-              Home
+              Inicio
             </Link>
 
             <Link
@@ -86,19 +86,11 @@ export const CustomHeader = () => {
             </Link>
 
             <Link
-              to="/quienesSomos"
+              to="/comoComprar"
               onClick={() => setMenuAbierto(false)}
               className="rounded-md px-3 py-3 text-sm font-medium hover:bg-slate-200"
             >
-              Quiénes Somos
-            </Link>
-
-            <Link
-              to="/contacto"
-              onClick={() => setMenuAbierto(false)}
-              className="rounded-md px-3 py-3 text-sm font-medium hover:bg-slate-200"
-            >
-              Contacto
+              Como Comprar
             </Link>
           </nav>
         )}
