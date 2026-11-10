@@ -10,17 +10,17 @@ export const CustomFooter = () => {
             <div>
               <CustomLogo/>
               <p className="text-sm text-muted-foreground">
-                Ropa inspirada en el diseño minimalista y la innovación de Tesla.
+                .............
               </p>
             </div>
             
             <div>
               <h4 className="font-medium mb-4">Productos</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">Camisetas</a></li>
-                <li><a href="#" className="hover:text-foreground">Sudaderas</a></li>
-                <li><a href="#" className="hover:text-foreground">Chaquetas</a></li>
-                <li><a href="#" className="hover:text-foreground">Accesorios</a></li>
+                <li><a href="#" className="hover:text-foreground">....</a></li>
+                <li><a href="#" className="hover:text-foreground">....</a></li>
+                <li><a href="#" className="hover:text-foreground">....</a></li>
+                <li><a href="#" className="hover:text-foreground">....</a></li>
               </ul>
             </div>
             
@@ -37,16 +37,16 @@ export const CustomFooter = () => {
             <div>
               <h4 className="font-medium mb-4">Empresa</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-foreground">Sobre Nosotros</a></li>
-                <li><a href="#" className="hover:text-foreground">Sustentabilidad</a></li>
-                <li><a href="#" className="hover:text-foreground">Carreras</a></li>
-                <li><a href="#" className="hover:text-foreground">Prensa</a></li>
+                <li><a href="#" className="hover:text-foreground">......</a></li>
+                <li><a href="#" className="hover:text-foreground">......</a></li>
+                <li><a href="#" className="hover:text-foreground">.....</a></li>
+                <li><a href="#" className="hover:text-foreground">.....</a></li>
               </ul>
             </div>
           </div>
           
           <div className="border-t mt-8 pt-8 text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} Tesla Style. Todos los derechos reservados.</p>
+            <p>&copy; {new Date().getFullYear()} Todos los derechos reservados.</p>
           </div>
         </div>
       </footer>
