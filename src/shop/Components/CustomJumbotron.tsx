@@ -6,7 +6,7 @@ export const CustomJumbotron = ({title, subTitle}:Props) => {
     const defaultSubTitle = ""
     return (
         <div>      {/* Hero Section */}
-            <section className="pt-10 pb-10 px-4 lg:px-8">
+            <section className="pt-20 px-4 lg:px-8">
                 <div className="container mx-auto text-center">
                     <h1 className="font-montserrat text-2xl lg:text-4xl tracking-tight mb-6">
                         {title}
