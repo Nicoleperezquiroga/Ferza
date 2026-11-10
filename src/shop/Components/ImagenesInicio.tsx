@@ -10,7 +10,7 @@ export const ImagenesInicio = () => {
     <img
       src={Img1}
       alt="Imagen Remo"
-      className="w-full h-full rounded-xl object-cover"
+      className="rounded-xl object-cover"
     />
   </div>
 
@@ -19,13 +19,13 @@ export const ImagenesInicio = () => {
     <img
       src={Img2}
       alt="Joven Remando"
-      className="w-full h-full rounded-xl object-cover"
+      className="rounded-xl object-cover"
     />
 
     <img
       src={Img3}
       alt="Mujer remando"
-      className="w-full h-full rounded-xl object-cover"
+      className="rounded-xl object-cover"
     />
   </div>
 </div>
