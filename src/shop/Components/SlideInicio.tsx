@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import "../css/home.css";
-import fondoPowerblade from "./../assets/home/slideInicio.png";
+import fondoFerza from "./../assets/home/SlideInicio.png";
 import { Button } from '@/components/ui/button';
 
 export const SlideInicio = () => {
@@ -8,7 +8,7 @@ export const SlideInicio = () => {
         <div className='w-full font-montserrat'>      {/* Hero Section */}
             <section className="relative w-full bg-center bg-no-repeat flex items-center justify-center flex-col "
                 style={{
-                    backgroundImage: `url(${fondoPowerblade})`,
+                    backgroundImage: `url(${fondoFerza})`,
                     backgroundSize: "100% 100%",
                     aspectRatio: "1920 / 800",
                 }}>

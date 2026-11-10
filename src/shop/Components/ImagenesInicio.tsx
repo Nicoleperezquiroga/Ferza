@@ -1,6 +1,6 @@
-import Img1 from "@/shop/assets/home/Img1.png";
-import Img2 from "@/shop/assets/home/Img2.png";
-import Img3 from "@/shop/assets/home/Img3.png";
+import Img1 from "@/shop/assets/home/img1.png";
+import Img2 from "@/shop/assets/home/img2.png";
+import Img3 from "@/shop/assets/home/img3.png";
 
 export const ImagenesInicio = () => {
     return (
