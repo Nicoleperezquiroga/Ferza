@@ -3,7 +3,7 @@ interface Props {
     subTitle?: string;
 }
 export const CustomJumbotron = ({title, subTitle}:Props) => {
-    const defaultSubTitle = "Productos y servicio de calidad."
+    const defaultSubTitle = ""
     return (
         <div>      {/* Hero Section */}
             <section className="pt-10 pb-10 px-4 lg:px-8">

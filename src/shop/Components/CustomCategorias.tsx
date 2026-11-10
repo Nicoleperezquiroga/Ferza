@@ -11,7 +11,7 @@ const handleClick = (name: string): void => {
 
   return (
     <div className='flex justify-center'>
-      <div className="max-w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-20 gap-y-4" >
+      <div className="max-w-full grid grid-cols-3 gap-1" >
         {categorias.map((cat) => (
           <div key={cat.id} className="flex flex-col items-center justify-center cursor-pointer" onClick={() => handleClick(cat.name)}>
             <img
