@@ -39,6 +39,9 @@ import bolsitoFerza1 from "@/shop/assets/home/BolsitoFerza/bolsito-ferza-1.webp"
 import bolsitoFerza2 from "@/shop/assets/home/BolsitoFerza/bolsito-ferza-2.webp";
 import bolsitoFerza3 from "@/shop/assets/home/BolsitoFerza/bolsito-ferza-3.webp";
 
+import portaQuilla1 from "@/shop/assets/home/PortaQuilla/portaQuilla-1.webp";
+import portaQuilla2 from "@/shop/assets/home/PortaQuilla/portaQuilla-2.webp";
+import portaQuilla3 from "@/shop/assets/home/PortaQuilla/portaQuilla-3.webp";
 export interface Imagen {
   id: string;
   name: string;
@@ -369,6 +372,48 @@ Puedes usarlo como neceser para tus esenciales, estuche para tus lápices o *wet
 🌊 Ideal para la playa, viajes y uso diario.<br /><br />
 
 *¡Pequeño en tamaño, grande en posibilidades!* 💕<br />
+**FERZA** | Hecho a mano, inspirado en el mar. 🐚`,
+    habilitado: true,
+    topVenta: false,
+  },
+    {
+    id: "7",
+    name: "Porta Quilla",
+    price: 14900,
+    imagenes: [{
+      id: "1",
+      name: "portaQuilla1",
+      imagen: portaQuilla1,
+      habilitado: true,
+    },
+    {
+      id: "2",
+      name: "portaQuilla2",
+      imagen: portaQuilla2,
+      habilitado: true,
+    },
+    {
+      id: "3",
+      name: "portaQuilla3",
+      imagen: portaQuilla3,
+      habilitado: true,
+    },
+    ],
+    category: "mar",
+    description: `**🌊 Portaquillas FERZA | 🏄‍♀️**
+
+¡Protege tus quillas y llévalas contigo a cada aventura! 💙<br />
+Confeccionado a mano en tela acolchada, ideal para mantener tus quillas protegidas, organizadas y listas para acompañarte en el agua.<br /><br />
+
+**✨ ¿Por qué lo amarás?**<br />
+🛡️ Tela acolchada para proteger tus quillas.<br />
+🏄‍♀️ Capacidad aproximada para 5 quillas, según su tamaño.<br />
+🔒 Puedes elegir el cierre con clip o velcro, según tu preferencia.<br />
+🤍 Práctico y fácil de transportar.<br /><br />
+
+**📏 Medidas:** 30 × 27,5 cm.<br /><br />
+
+*¡Pequeños detalles que acompañan grandes aventuras!* 🌊<br />
 **FERZA** | Hecho a mano, inspirado en el mar. 🐚`,
     habilitado: true,
     topVenta: false,
