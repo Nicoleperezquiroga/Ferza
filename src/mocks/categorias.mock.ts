@@ -1,7 +1,7 @@
 // Import all product images
-import catMar from "@/shop/assets/home/catMar.png";
-import catFloripia from "@/shop/assets/home/catFloripia.png";
-import catCrochet from "@/shop/assets/home/catCrochet.png";
+import catMar from "@/shop/assets/home/catMar.webp";
+import catFloripia from "@/shop/assets/home/catFloripia.webp";
+import catCrochet from "@/shop/assets/home/catCrochet.webp";
 
 export interface Categoria {
   id: string;

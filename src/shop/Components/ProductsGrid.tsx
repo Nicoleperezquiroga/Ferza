@@ -1,5 +1,5 @@
 import type { Product } from '@/mocks/products.mock';
-import { useEffect, useState } from 'react'
+import { useMemo } from 'react'
 import ProductCard from './ProductCard';
 import { useParams } from 'react-router';
 
@@ -11,16 +11,11 @@ export const ProductsGrid = ({ products }: Props) => {
 
   const { coleccion } = useParams();
 
-  const [productoFiltrado, setProductoFiltrado] =
-    useState<Product[]>([]);
-
-  useEffect(() => {
-    const resultado = products.filter(
+  const productosFiltrados = useMemo(() => {
+    return products.filter(
       (producto) =>
         producto.category.toLowerCase() === coleccion?.toLowerCase()
     );
-
-    setProductoFiltrado(resultado);
   }, [products, coleccion]);
 
   return (
@@ -30,14 +25,14 @@ export const ProductsGrid = ({ products }: Props) => {
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center space-x-4">
               <h2 className="text-3xl font-light">Productos</h2>
-              <span className="text-muted-foreground">({productoFiltrado.length} productos)</span>
+              <span className="text-muted-foreground">({productosFiltrados.length} productos)</span>
             </div>
           </div>
           <div className="flex gap-8">
             {/* Products Grid */}
             <div className="flex-1">
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                {productoFiltrado.map((product) => (
+                {productosFiltrados.map((product) => (
                   <ProductCard
                     key={product.id}
                     id={product.id}

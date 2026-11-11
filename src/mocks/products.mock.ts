@@ -1,32 +1,43 @@
 // Import all product images
-import MatSurf1 from "@/shop/assets/home/MatSurf/Mat_Surf_1.jpeg";
-import MatSurf2 from "@/shop/assets/home/MatSurf/Mat_Surf_2.jpeg";
-import MatSurf3 from "@/shop/assets/home/MatSurf/Mat_Surf_3.jpeg";
-import MatSurf4 from "@/shop/assets/home/MatSurf/Mat_Surf_4.jpeg";
-import MatSurf5 from "@/shop/assets/home/MatSurf/Mat_Surf_5.jpeg";
-import MatSurf6 from "@/shop/assets/home/MatSurf/Mat_Surf_6.jpeg";
-import MatSurf7 from "@/shop/assets/home/MatSurf/Mat_Surf_7.jpeg";
+import MatSurf1 from "@/shop/assets/home/MatSurf/Mat_Surf_1.webp";
+import MatSurf2 from "@/shop/assets/home/MatSurf/Mat_Surf_2.webp";
+import MatSurf3 from "@/shop/assets/home/MatSurf/Mat_Surf_3.webp";
+import MatSurf4 from "@/shop/assets/home/MatSurf/Mat_Surf_4.webp";
+import MatSurf5 from "@/shop/assets/home/MatSurf/Mat_Surf_5.webp";
+import MatSurf6 from "@/shop/assets/home/MatSurf/Mat_Surf_6.webp";
+import MatSurf7 from "@/shop/assets/home/MatSurf/Mat_Surf_7.webp";
 
-import PaddleSUP1 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-1.png";
-import PaddleSUP2 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-2.png";
-import PaddleSUP3 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-3.png";
-import PaddleSUP4 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-4.png";
-import PaddleSUP5 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-5.png";
-import PaddleSUP6 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-6.png";
-import PaddleSUP7 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-7.png";
+import PaddleSUP1 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-1.webp";
+import PaddleSUP2 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-2.webp";
+import PaddleSUP3 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-3.webp";
+import PaddleSUP4 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-4.webp";
+import PaddleSUP5 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-5.webp";
+import PaddleSUP6 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-6.webp";
+import PaddleSUP7 from "@/shop/assets/home/PaddleSUP/Paddle-SUP-7.webp";
 
-import Poncho1 from "@/shop/assets/home/Ponchos/Poncho-1.png";
-import Poncho2 from "@/shop/assets/home/Ponchos/Poncho-2.png";
-import Poncho3 from "@/shop/assets/home/Ponchos/Poncho-3.png";
-import Poncho4 from "@/shop/assets/home/Ponchos/Poncho-4.png";
+import Poncho1 from "@/shop/assets/home/Ponchos/Poncho-1.webp";
+import Poncho2 from "@/shop/assets/home/Ponchos/Poncho-2.webp";
+import Poncho3 from "@/shop/assets/home/Ponchos/Poncho-3.webp";
+import Poncho4 from "@/shop/assets/home/Ponchos/Poncho-4.webp";
 
-import Maui1 from "@/shop/assets/home/BolsoMaui/bolsoMaui-1.png";
-import Maui2 from "@/shop/assets/home/BolsoMaui/bolsoMaui-2.png";
-import Maui3 from "@/shop/assets/home/BolsoMaui/bolsoMaui-3.png";
-import Maui4 from "@/shop/assets/home/BolsoMaui/bolsoMaui-4.png";
-import Maui5 from "@/shop/assets/home/BolsoMaui/bolsoMaui-5.png";
-import Maui6 from "@/shop/assets/home/BolsoMaui/bolsoMaui-6.png";
-import Maui7 from "@/shop/assets/home/BolsoMaui/bolsoMaui-7.png";
+import Maui1 from "@/shop/assets/home/BolsoMaui/bolsoMaui-1.webp";
+import Maui2 from "@/shop/assets/home/BolsoMaui/bolsoMaui-2.webp";
+import Maui3 from "@/shop/assets/home/BolsoMaui/bolsoMaui-3.webp";
+import Maui4 from "@/shop/assets/home/BolsoMaui/bolsoMaui-4.webp";
+import Maui5 from "@/shop/assets/home/BolsoMaui/bolsoMaui-5.webp";
+import Maui6 from "@/shop/assets/home/BolsoMaui/bolsoMaui-6.webp";
+import Maui7 from "@/shop/assets/home/BolsoMaui/bolsoMaui-7.webp";
+
+import Mat1 from "@/shop/assets/home/MatPlayero/mat-1.webp";
+import Mat2 from "@/shop/assets/home/MatPlayero/mat-2.webp";
+import Mat3 from "@/shop/assets/home/MatPlayero/mat-3.webp";
+import Mat4 from "@/shop/assets/home/MatPlayero/mat-4.webp";
+import Mat5 from "@/shop/assets/home/MatPlayero/mat-5.webp";
+import Mat6 from "@/shop/assets/home/MatPlayero/mat-6.webp";
+
+import bolsitoFerza1 from "@/shop/assets/home/BolsitoFerza/bolsito-ferza-1.webp";
+import bolsitoFerza2 from "@/shop/assets/home/BolsitoFerza/bolsito-ferza-2.webp";
+import bolsitoFerza3 from "@/shop/assets/home/BolsitoFerza/bolsito-ferza-3.webp";
 
 export interface Imagen {
   id: string;
@@ -115,7 +126,7 @@ Un práctico accesorio **2 en 1** que se transforma de mat para cambiarte en un 
       name: "Imagen",
       imagen: PaddleSUP1,
       habilitado: true,
-    },{
+    }, {
       id: "2",
       name: "Imagen",
       imagen: PaddleSUP2,
@@ -263,5 +274,103 @@ Se adapta a tu día: úsalo como bandolera o transfórmalo fácilmente en mochil
 **FERZA** | Hecho a mano, inspirado en el mar. 🐚`,
     habilitado: true,
     topVenta: true,
+  },
+  {
+    id: "5",
+    name: "Mat Playero",
+    price: 21900,
+    imagenes: [{
+      id: "1",
+      name: "Imagen1",
+      imagen: Mat1,
+      habilitado: true,
+    },
+    {
+      id: "2",
+      name: "Imagen2",
+      imagen: Mat2,
+      habilitado: true,
+    },
+    {
+      id: "3",
+      name: "Imagen3",
+      imagen: Mat3,
+      habilitado: true,
+    },
+    {
+      id: "4",
+      name: "Imagen4",
+      imagen: Mat4,
+      habilitado: true,
+    },
+    {
+      id: "5",
+      name: "Imagen5",
+      imagen: Mat5,
+      habilitado: true,
+    },
+    {
+      id: "6",
+      name: "Imagen6",
+      imagen: Mat6,
+      habilitado: true,
+    },
+    ],
+    category: "mar",
+    description: `**🌺 Mat Playero FERZA | 🌊**
+
+Tu compañero perfecto para disfrutar del sol, la arena y el mar. ☀️<br />
+Confeccionado con telas impermeables, liviano, práctico y fácil de transportar.<br /><br />
+
+**✨ ¿Por qué lo amarás?**<br />
+📱 Bolsillo transparente con cierre para proteger tu celular y tenerlo siempre a mano.<br />
+🏖️ Se enrolla fácilmente e incluye un strap independiente para llevarlo cómodamente al hombro.<br /><br />
+
+**📏 Medidas:** 1,97 × 0,97 m.<br /><br />
+
+*¡Extiéndelo, relájate y disfruta!* 🐚<br />
+**FERZA** | Hecho a mano, inspirado en el mar.`,
+    habilitado: true,
+    topVenta: false,
+  },
+  {
+    id: "6",
+    name: "Bolsito ferza",
+    price: 6900,
+    imagenes: [{
+      id: "1",
+      name: "bolsitoFerza1",
+      imagen: bolsitoFerza1,
+      habilitado: true,
+    },
+    {
+      id: "2",
+      name: "bolsitoFerza2",
+      imagen: bolsitoFerza2,
+      habilitado: true,
+    },
+    {
+      id: "3",
+      name: "bolsitoFerza3",
+      imagen: bolsitoFerza3,
+      habilitado: true,
+    },
+    ],
+    category: "mar",
+    description: `**🌺 Bolsito FERZA | 🐚**
+
+¡Un bolsito, mil posibilidades! 💕<br />
+Puedes usarlo como neceser para tus esenciales, estuche para tus lápices o *wet bag* para guardar tu bikini después de un día de playa. 🌊☀️<br /><br />
+
+**✨ ¿Por qué lo amarás?**<br />
+👜 Compacto, práctico y versátil.<br />
+🔒 Cierre para mantener tus esenciales protegidos.<br />
+🤍 Asa para llevarlo cómodamente.<br />
+🌊 Ideal para la playa, viajes y uso diario.<br /><br />
+
+*¡Pequeño en tamaño, grande en posibilidades!* 💕<br />
+**FERZA** | Hecho a mano, inspirado en el mar. 🐚`,
+    habilitado: true,
+    topVenta: false,
   },
 ];

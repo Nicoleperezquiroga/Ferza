@@ -2,10 +2,11 @@ import ProductCard from './ProductCard'
 import { products } from "@/mocks/products.mock"
 
 export const TopVentasGrid = () => {
+  const productosTopVenta = products.filter((producto)=> producto.topVenta);
   return (
     <div className='px-10 lg:px-40'>
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-x-10 gap-y-4">
-        {products.map((producto) => (
+        {productosTopVenta.map((producto) => (
             <ProductCard id={producto.id} name={producto.name} price={producto.price} imagenes={producto.imagenes} category={producto.category} description={producto.description}/>
         ))}
         </div>

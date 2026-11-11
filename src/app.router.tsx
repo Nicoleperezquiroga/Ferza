@@ -1,64 +1,41 @@
 import { createBrowserRouter, Navigate } from "react-router";
 import { ShopLayout } from "./shop/layouts/ShopLayout";
-import { HomePage } from "./shop/pages/home/HomePage";
 import { ColeccionesPage } from "./shop/pages/Colecciones/ColeccionesPage";
-const AuthLayout = lazy(() => import('./auth/layouts/AuthLayout'));
-import { LoginPage } from "./auth/pages/login/LoginPage";
-import { RegisterPage } from "./auth/pages/register/Register";
-const AdminLayout = lazy(() => import('./admin/layouts/AdminLayout'));
-import { DashboardPage } from "./admin/pages/dashboard/DashboardPage";
-import { lazy } from "react";
+import { lazy, Suspense } from "react";
 import { ComoComprarPage } from "./shop/pages/comoComprar/ComoComprarPage";
 
-
-
+// Páginas públicas
+const HomePage = lazy(() =>
+    import("./shop/pages/home/HomePage").then((m) => ({
+        default: m.HomePage,
+    }))
+);
+// Componente de carga
+const Cargando = () => (
+    <div className="flex min-h-[200px] items-center justify-center">
+        Cargando...
+    </div>
+);
 export const appRouter = createBrowserRouter([
     //Rutas públicas
     {
-        path:'/',
-        element:<ShopLayout/>,
+        path: '/',
+        element: <ShopLayout />,
         children: [
             {
                 index: true,
-                element: <HomePage/>
+                element: <Suspense fallback={<Cargando />}>
+                    <HomePage />
+                </Suspense>
             },
             {
                 path: 'coleccion/:coleccion',
-                element: <ColeccionesPage/>
+                element: <ColeccionesPage />
             },
             {
                 path: 'comoComprar',
-                element: <ComoComprarPage/>
+                element: <ComoComprarPage />
             }
-        ]
-    },
-    //Rutas con autentificación
-    {
-        path: '/auth',
-        element: <AuthLayout/>,
-        children: [
-            {
-                index: true,
-                element: <Navigate to="/auth/login"/>
-            },
-            {
-                path: 'login',
-                element: <LoginPage/>
-            },
-            {
-                path: 'register',
-                element: <RegisterPage/>
-            }
-        ]
-    },
-    {
-        path: '/admin',
-        element: <AdminLayout/>,
-        children: [
-            {
-                index: true,
-                element: <DashboardPage/>
-            },
         ]
     },
     {

@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 import "../css/home.css";
-import fondoFerza from "./../assets/home/SlideInicio.png";
+import fondoFerza from "./../assets/home/SlideInicio.webp";
 import { Button } from '@/components/ui/button';
 
 export const SlideInicio = () => {

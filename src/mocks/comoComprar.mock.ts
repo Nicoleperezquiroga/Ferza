@@ -1,4 +1,4 @@
-import MatSurf1 from "@/shop/assets/home/MatSurf/Mat_Surf_1.jpeg";
+import MatSurf1 from "@/shop/assets/home/MatSurf/Mat_Surf_1.webp";
 import type { LucideIcon } from "lucide-react";
 
 import {

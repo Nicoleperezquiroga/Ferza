@@ -19,6 +19,8 @@ export const DetalleProducto = ({ imagenes }: ImagenesProps) => {
           src={imagenesActivas[imagenSeleccionada].imagen}
           alt={imagenesActivas[imagenSeleccionada].name}
           className="w-full h-full object-contain"
+          loading="lazy"
+          decoding="async"
         />
       </div>
       {/* Miniaturas */}
