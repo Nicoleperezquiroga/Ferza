@@ -1,6 +1,7 @@
 import { Outlet } from "react-router";
 import { CustomHeader } from "../Components/CustomHeader";
 import { CustomFooter } from "../Components/CustomFooter";
+import { WhatsAppFloatingButton } from "../Components/WhatsAppFloatingButton";
 
 export const ShopLayout = () => {
     return(
@@ -8,6 +9,7 @@ export const ShopLayout = () => {
             <CustomHeader/> 
             <Outlet/>
             <CustomFooter/>
+            <WhatsAppFloatingButton />
         </div>
     );
 }
