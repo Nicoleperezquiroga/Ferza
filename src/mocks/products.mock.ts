@@ -339,7 +339,7 @@ Confeccionado con telas impermeables, liviano, práctico y fácil de transportar
   {
     id: "6",
     name: "Bolsito ferza",
-    price: 6900,
+    price: 8200,
     imagenes: [{
       id: "1",
       name: "bolsitoFerza1",
